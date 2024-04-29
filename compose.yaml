@@ -1,14 +1,14 @@
-version: "3"
+version: "3.8"
 networks:
   jedi:
 
 services:
   db:
-    container_name: 21621611
+    container_name: s21621611
     image: postgres:latest
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: padawan
+      POSTGRES_PASSWORD: R2D2c3p0
       POSTGRES_DB: tasks
