@@ -47,4 +47,9 @@ public class TaskServiceImp implements TaskService {
     return mapper.map(tasks, new TypeToken<List<TaskDTO>>() {
     }.getType());
   }
+
+  @Override
+  public void deleteByID(Long id) {
+    repository.deleteById(id);
+  }
 }

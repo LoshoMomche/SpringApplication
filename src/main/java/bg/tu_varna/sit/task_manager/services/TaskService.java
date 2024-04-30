@@ -10,4 +10,6 @@ public interface TaskService {
     TaskDTO read(Long id);
 
     List<TaskDTO> readAll();
+
+    void deleteByID(Long id);
 }
