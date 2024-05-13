@@ -20,5 +20,6 @@ public class TaskDTO {
   private String description;
   @NotNull(message = "Deadline cannot be null.")
   private LocalDateTime deadline;
+
   private Set<ReportDTO> reports;
 }
